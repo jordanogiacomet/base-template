@@ -56,7 +56,7 @@ class Services {
 
 As rotas são definidas para especificar como a aplicação deve responder a uma requisição a um determinado endpoint, que é uma URI (ou caminho) e um método HTTP específico (GET, POST, etc.).
 
-```javascript
+```
 const express = require('express');
 const MeuController = require('../controllers/meuController');
 const router = express.Router();
@@ -77,8 +77,30 @@ Para colocar o servidor em funcionamento localmente, siga os passos abaixo:
 
 1. **Instalação de Dependências**:
    Utilize o comando abaixo para instalar todas as dependências necessárias listadas no arquivo `package.json`.
-
    ```
     npm install
    ```
-   ```
+2. **Configuração do Banco de Dados**:
+Configure seu banco de dados MySQL de acordo com as configurações encontradas em `src/config/config.json`. Certifique-se de que as credenciais e o nome do banco de dados estejam corretos para os ambientes de desenvolvimento, teste e produção.
+
+3. **Migrações do Banco de Dados**:
+Execute as migrações para criar as tabelas no banco de dados usando o Sequelize CLI com o comando:
+```
+npx sequelize-cli db:migrate
+```
+4. **Populando o Banco de Dados** (opcional):
+Se necessário, você pode popular o banco de dados com dados iniciais utilizando o comando:
+```
+npx sequelize-cli db:seed:all
+```
+5. **Executando o Servidor**:
+Inicie o servidor em modo de desenvolvimento com o seguinte comando:
+```
+npm run dev
+```
+Isso iniciará o servidor usando `nodemon`, que irá automaticamente reiniciar o servidor sempre que houver alterações no código.
+
+6. **Testando a API**:
+Após o servidor estar em execução, você pode testar as rotas da API utilizando um cliente de API como Postman ou simplesmente acessando-as através do navegador, dependendo do tipo de requisição (GET, POST, etc.).
+
+Tenha certeza de verificar os logs no console para qualquer erro e mensagens de sucesso indicando que o servidor está rodando corretamente.
