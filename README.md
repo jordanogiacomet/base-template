@@ -38,3 +38,47 @@ async pegaTodos(req, res) {
   }
 }
 ```
+
+## Serviços
+
+Os serviços interagem com os modelos do Sequelize para realizar operações no banco de dados. Eles são chamados pelos controladores e contêm a lógica de negócios da aplicação.
+
+```javascript
+class Services {
+  // ...
+  async pegaTodosOsRegistros() {
+    return dataSource[this.model].findAll();
+  }
+  // ...
+}
+
+## Rotas
+
+As rotas são definidas para especificar como a aplicação deve responder a uma requisição a um determinado endpoint, que é uma URI (ou caminho) e um método HTTP específico (GET, POST, etc.).
+
+```javascript
+const express = require('express');
+const MeuController = require('../controllers/meuController');
+const router = express.Router();
+
+router.get('/entidade', MeuController.pegaTodos);
+router.get('/entidade/:id', MeuController.pegaUmPorId);
+router.post('/entidade', MeuController.criaNovo);
+router.put('/entidade/:id', MeuController.atualiza);
+router.delete('/entidade/:id', MeuController.exclui);
+
+module.exports = router;
+
+```
+
+## Executando o Projeto
+
+Para colocar o servidor em funcionamento localmente, siga os passos abaixo:
+
+1. **Instalação de Dependências**:
+   Utilize o comando abaixo para instalar todas as dependências necessárias listadas no arquivo `package.json`.
+
+   ```
+    npm install
+   ```
+   ```
