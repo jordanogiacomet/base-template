@@ -30,6 +30,12 @@ No diretório do projeto, você pode rodar:
 - **Iniciar o projeto**:
   ```bash
   npm start
+
+Este comando inicia o servidor de desenvolvimento. A aplicação será aberta automaticamente no navegador padrão. O servidor de desenvolvimento oferece recarga ao vivo, então qualquer alteração nos arquivos do projeto será imediatamente refletida no navegador sem a necessidade de recarregar a página manualmente.
+
+- **Construir o projeto para produção**:
+  ```bash
+  npm run build
   
 # Estrutura do Backend
 
