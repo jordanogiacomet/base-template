@@ -1,3 +1,36 @@
+# Frontend da Aplicação
+
+Este repositório contém o código do frontend de uma aplicação criada com o React.
+
+## Estrutura de Arquivos
+
+- `node_modules`: Pasta que contém todos os pacotes do npm que o projeto depende.
+- `public`: Pasta que contém os arquivos estáticos como HTML e ícones.
+  - `favicon.ico`: Ícone da guia do navegador.
+  - `index.html`: Arquivo HTML raiz que é servido ao visitar a aplicação.
+- `src`: Pasta que contém os arquivos fonte JavaScript e CSS.
+  - `components`: Diretório para os componentes React.
+  - `resources`: Diretório para outros recursos estáticos, como imagens ou arquivos compartilhados.
+  - `App.js`: Componente raiz da aplicação React.
+  - `index.js`: Ponto de entrada JavaScript que renderiza o componente `App` no DOM.
+  - `logo.svg`: Um arquivo de imagem SVG usado no template padrão do React.
+
+- `package.json`: Arquivo que lista as dependências do projeto e scripts disponíveis.
+
+## Dependências
+
+- `react`: Biblioteca para construir interfaces de usuário.
+- `react-dom`: Pacote que permite ao React interagir com o DOM.
+- `react-scripts`: Conjunto de scripts e configurações usados para iniciar, construir e testar aplicações React.
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode rodar:
+
+- **Iniciar o projeto**:
+  ```bash
+  npm start
+  
 # Estrutura do Backend
 
 Este repositório contém o código do backend de uma aplicação Node.js que utiliza o framework Express.js e o ORM Sequelize para a interação com o banco de dados MySQL.
