@@ -97,7 +97,6 @@ class Services {
 
 As rotas são definidas para especificar como a aplicação deve responder a uma requisição a um determinado endpoint, que é uma URI (ou caminho) e um método HTTP específico (GET, POST, etc.):
 
-```javascript
   const express = require('express');
   const MeuController = require('../controllers/meuController');
   const router = express.Router();
