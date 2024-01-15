@@ -43,7 +43,7 @@ async pegaTodos(req, res) {
 
 Os serviços interagem com os modelos do Sequelize para realizar operações no banco de dados. Eles são chamados pelos controladores e contêm a lógica de negócios da aplicação.
 
-```javascript
+```
 class Services {
   // ...
   async pegaTodosOsRegistros() {
