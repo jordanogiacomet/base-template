@@ -36,6 +36,8 @@ Este comando inicia o servidor de desenvolvimento. A aplicação será aberta au
 - **Construir o projeto para produção**:
   ```bash
   npm run build
+
+  Compila a aplicação para produção na pasta build. Otimiza o build para o melhor desempenho: os arquivos são minificados e os nomes dos arquivos incluem os hashes.
   
 # Estrutura do Backend
 
