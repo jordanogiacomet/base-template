@@ -28,7 +28,7 @@ Os controladores são responsáveis por manipular as solicitações e respostas 
 
 Exemplo de um método do controlador:
 
-```javascript
+```
 async pegaTodos(req, res) {
   try {
     const registros = await this.entidadeService.pegaTodosOsRegistros();
