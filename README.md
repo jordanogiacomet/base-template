@@ -109,7 +109,6 @@ As rotas são definidas para especificar como a aplicação deve responder a uma
   router.delete('/entidade/:id', MeuController.exclui);
   
   module.exports = router;
-
 ```
 
 ## Executando o Projeto
