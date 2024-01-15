@@ -117,6 +117,7 @@ Para colocar o servidor em funcionamento localmente, siga os passos abaixo:
 1. **Instalação de Dependências**:
 Utilize o comando abaixo para instalar todas as dependências necessárias listadas no arquivo `package.json`.
 
+```cli
 npm install
 ```
 
@@ -126,18 +127,21 @@ Configure seu banco de dados MySQL de acordo com as configurações encontradas 
 3. **Migrações do Banco de Dados**:
 Execute as migrações para criar as tabelas no banco de dados usando o Sequelize CLI com o comando:
 
+```cli
 npx sequelize-cli db:migrate
 ```
 
 4. **Populando o Banco de Dados** (opcional):
 Se necessário, você pode popular o banco de dados com dados iniciais utilizando o comando:
 
+```cli
 npx sequelize-cli db:seed:all
 ```
 
 5. **Executando o Servidor**:
 Inicie o servidor em modo de desenvolvimento com o seguinte comando:
 
+```cli
 npm run dev
 ```
 
