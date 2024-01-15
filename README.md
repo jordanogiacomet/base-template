@@ -95,9 +95,8 @@ npx sequelize-cli db:seed:all
 
 5. **Executando o Servidor**:
 Inicie o servidor em modo de desenvolvimento com o seguinte comando:
-```
- npm run dev
-```
+
+npm run dev
 
 Isso iniciará o servidor usando `nodemon`, que irá automaticamente reiniciar o servidor sempre que houver alterações no código.
 
