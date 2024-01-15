@@ -76,9 +76,9 @@ module.exports = router;
 Para colocar o servidor em funcionamento localmente, siga os passos abaixo:
 
 1. **Instalação de Dependências**:
-   Utilize o comando abaixo para instalar todas as dependências necessárias listadas no arquivo `package.json`.
+Utilize o comando abaixo para instalar todas as dependências necessárias listadas no arquivo `package.json`.
 
-   npm install
+npm install
 
 2. **Configuração do Banco de Dados**:
 Configure seu banco de dados MySQL de acordo com as configurações encontradas em `src/config/config.json`. Certifique-se de que as credenciais e o nome do banco de dados estejam corretos para os ambientes de desenvolvimento, teste e produção.
